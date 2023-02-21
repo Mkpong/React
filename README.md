@@ -20,6 +20,7 @@ React 개발의 준비는 끝이난다.
 |:--:|:--:|:--:|
 |class|className|-|
 |style=""|style={{}}|{style: 'value'}|
+|onClick=""|onClick={}|{function}|
 |font-size|fontSize|-|
 
 
