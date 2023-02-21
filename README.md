@@ -18,7 +18,7 @@ React 개발의 준비는 끝이난다.
 |HTML|JSX|Remarks|
 |:--:|:--:|:--:|
 |class|className|-|
-|style=""|style={ }|{style: 'value'}|
+|a|b|{style: 'value'}|
 
 - **JSX 문법**
    - 변수를 넣을때에는 { 변수명 } 으로 사용(Data-Binding)
