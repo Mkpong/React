@@ -16,10 +16,11 @@ React 개발의 준비는 끝이난다.
 
 - **HTML과 JSX의 차이**
 
-|HTML|JSX|Remarks|
+|HTML/CSS|JSX|Remarks|
 |:--:|:--:|:--:|
 |class|className|-|
 |style=""|style={{}}|{style: 'value'}|
+|font-size|fontSize|-|
 
 
 - **JSX 문법**
