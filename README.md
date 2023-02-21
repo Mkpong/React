@@ -18,7 +18,8 @@ React 개발의 준비는 끝이난다.
 |HTML|JSX|Remarks|
 |:--:|:--:|:--:|
 |class|className|-|
-|a|b|c|
+|class|className|-|
+
 
 - **JSX 문법**
    - 변수를 넣을때에는 { 변수명 } 으로 사용(Data-Binding)
