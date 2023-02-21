@@ -15,10 +15,11 @@ React 개발의 준비는 끝이난다.
 - 대부분의 문법은 비슷하지만 다르게 사용하는 경우들이 존재하기때문에 아래에 정리
 
 - **HTML과 JSX의 차이**
+
 |HTML|JSX|Remarks|
 |:--:|:--:|:--:|
 |class|className|-|
-|class|className|-|
+|style=""|style={{}}|{style: 'value'}|
 
 
 - **JSX 문법**
