@@ -13,3 +13,23 @@
 - index.js에 BrowserRouter을 추가해 주어야 한다.
 
 `import {BrowserRouter} from 'react-router-dom';`
+
+-App.js에 다음과 같은 기능 추가
+
+`import {Routes, Route, Link} from "react-router-dom"`
+
+-index.js에서 <BrowserRouter>안으로 <App />를 감싸준다
+
+index.js
+
+```
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+```
+  
