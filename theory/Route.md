@@ -18,10 +18,9 @@
 
 `import {Routes, Route, Link} from "react-router-dom"`
 
--index.js에서 <BrowserRouter>안으로 <App />를 감싸준다
+- index.js에서 \<BrowserRouter>안으로 \<App />를 감싸준다
 
 index.js
-
 ```
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
