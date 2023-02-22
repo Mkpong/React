@@ -1,4 +1,6 @@
-# 개발환경 setting
+# React
+
+## 1. 개발환경 설정
 
 - Node.js 설치
 - VS code 설치
@@ -9,3 +11,12 @@
    
 위의 작업을 모두 마치고 VS code에서 Open folder로 해당 프로젝트 파일을 열어주면
 React 개발의 준비는 끝이난다.
+
+
+## 2. 프로그램 실행
+
+- code를 실행하기 위해 터미널을 생성
+> npm start
+
+- code를 종료하기 위해 터미널에서 사용하는 단축키
+> ctrl+c -> y 혹은 ctrl+c
