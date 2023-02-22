@@ -20,8 +20,8 @@
 
 - index.js에서 \<BrowserRouter>안으로 \<App />를 감싸준다
 
-index.js
 ```
+//index.js
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -31,4 +31,27 @@ root.render(
   </React.StrictMode>
 );
 ```
+
+- App.js
+   - \<Link> -> html의 \<a>와 같은 기능을 한다. 해당 링크를 누르면 to="경로"로 이동
+   - \<Routes> -> 안에 다수의 Route를 포함하고 있다는 태크
+   - \<Route> -> path="경로" 해당 경로이면 element={\<Home />} Home 컴포넌트를 띄워준다
+
+```
+//App.js
+function App() {
+  return (
+    <div>
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/login">Login</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </div>
+  );
+}
+```
+ 
   
