@@ -27,6 +27,8 @@ function Login(props){
 ## 2.2 배열의 형태의 객체를 전달받아 사용
 1. 함수에 전달받을 객체를 설정
 
+`function Nav(props){ return (); }`
+
 2. 배열을 컴포넌트를 불러오고자 하는곳에 선언
 
 ```
