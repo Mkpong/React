@@ -25,4 +25,35 @@ function Login(props){
 - 이렇게 하면 내가 원하는 상황에 따라 컴포넌트를 수정하지 않고도 원하는 변수로 컴포넌트를 사용할 수 있다
 
 ## 2.2 배열의 형태의 객체를 전달받아 사용
+1. 함수에 전달받을 객체를 설정
 
+2. 배열을 컴포넌트를 불러오고자 하는곳에 선언
+
+```
+  const menu = [
+    {title: "home" , path: "/"},
+    {title: "login" , path: "/login"},
+    {title: "holy" , path: "/"}
+  ]
+```
+
+3. 컴포넌트를 선언할때 객체를 함께 전달
+
+`<Nav menu={menu}></Nav>`
+
+4. 여러가지 방법이 있지만 for문으로 리스트에 넣어 사용하는 방법이 있다.
+
+```
+function Nav(props){
+    const menu = []
+    for(let i=0 ; i<props.menu.length; i++){
+        let box = props.menu[i];
+        menu.push(<Link to={box.path} className="link">{box.title}</Link>)
+    }
+    return(
+        <nav className='navbar'>
+            {menu}
+        </nav>
+    );
+}
+```
