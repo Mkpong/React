@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 8px 12px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+  }

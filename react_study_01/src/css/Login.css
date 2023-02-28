@@ -1,0 +1,75 @@
+.page {
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+
+    left: 50%;
+    transform: translate(-50% ,0);
+
+    background-color: #F7F7F7;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titleWrap {
+    margin-top: 90px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.contentWrap {
+    margin-top: 25px;
+    flex: 1;
+}
+
+.inputTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #262626;
+    margin-top: 10px;
+}
+
+.inputWrap {
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.inputWrap:focus-within {
+    border: 1px solid #9e30f4;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.input::placeholder {
+    color: #dadada;
+}
+
+.bottomButton {
+    width: 50%;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    background-color: #9e30f4;
+    border-radius: 60px;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+

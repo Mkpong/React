@@ -11,11 +11,11 @@ function Login(props){
             <div className='contentWrap'>
                 <div className='inputTitle'>{props.ID}</div>
                 <div className='inputWrap'>
-                    <input className="input" placeholder='Dankook@dankook.ac.kr' name='email' type={'String'}/> 
+                    <input className="input" placeholder='Dankook@dankook.ac.kr' name='email' type={'String'}/>
                 </div>
                 <div className='inputTitle'>{props.PW}</div>
                 <div className='inputWrap'>
-                    <input className="input" placeholder='영문, 숫자, 특수문자 포함 8자 이상' name='password' type={'password'}/> 
+                    <input className="input" placeholder='영문, 숫자, 특수문자 포함 8자 이상' name='password' type={'password'}/>
                 </div>
             </div>
             <div>
