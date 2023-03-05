@@ -1,27 +1,22 @@
 import {Routes, Route, Link} from "react-router-dom"
-import Nav from './component/Nav';
 import Home from './component/Home';
-import Login from './component/Login';
+import LoginComp from './component/LoginComp';
 import Register from './component/Register';
-import './css/Nav.css';
+import NavComp from './component/NavComp';
+import Board from './component/Board';
 import './css/Login.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const menu = [
-    {title: "home" , path: "/"},
-    {title: "login" , path: "/login"},
-    {title: "register" , path: "/register"}
-  ]
 
   return (
     <div>
-      <Nav menu={menu}></Nav>
+      <NavComp></NavComp>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/login" element={<Login ID="이메일을 입력해 주세요" PW="비밀번호를 입력해 주세요" onChangeMode={function(){
-            alert("로그인 시도");
-          }}></Login>}></Route>
+        <Route path="/login" element={<LoginComp ID="이메일을 입력해 주세요" PW="비밀번호를 입력해 주세요"></LoginComp>}></Route>
         <Route path="/register" element={<Register />}></Route>
+        <Route path="/board" element={<Board />}></Route>
       </Routes>
     </div>
   );

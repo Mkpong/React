@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import qs from 'qs';
+import { useNavigate } from 'react-router-dom';
 
 function Register(){
 
     const [username , setUsername] = useState("");
     const [password , setPassword] = useState("");
+
+    const navigate = useNavigate();
 
 
     const register = () => {
@@ -17,6 +21,7 @@ function Register(){
                 console.log(response.data);
             })
             .catch(error => console.log(error))
+        return navigate("/login");
     }
 
     const onUsernameHandler = (event) => {
@@ -29,6 +34,8 @@ function Register(){
     return (
         <div className = "page">
             <div className= "titleWrap">
+                회원가입
+                <br/>
                 이메일과 비밀번호를
                 <br/>
                 입력해주세요
