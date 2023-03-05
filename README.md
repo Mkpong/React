@@ -20,3 +20,13 @@ React 개발의 준비는 끝이난다.
 
 - code를 종료하기 위해 터미널에서 사용하는 단축키
 > ctrl+c -> y 혹은 ctrl+c
+
+
+#React_Study
+## 1. react_study_01
+**구현내용**
+1. bootstrap을 이욯한 NavBar 생성
+2. axios를 이욯해 user정보 register/login
+3. spring security를 이용한 로그인 처리
+
+## 2. react_study_02
