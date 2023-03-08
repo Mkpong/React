@@ -12,6 +12,8 @@
 
 `<Route exact path="/note/view/:id" element={<NoteView />}></Route>`
 
+<br/><br/>
+
 ### 2. Link등을 통해 url을 호출할때 ${}으로 매개변수를 전달해 준다.
 
 `<Link to={`/note/view/${notes.id}`}>{notes.id}</Link></li>`
@@ -22,6 +24,8 @@
 
 해당 문제 때문에 변수 인식이 안되어 계속 고민함 ㅠㅠ
 
+<br/><br/>
+
 ### 3. 전달한 Parameter을 Component에서 받아 사용
 
 react-router-dom 의 useParams를 이용할 수 있다.
@@ -31,6 +35,8 @@ react-router-dom 의 useParams를 이용할 수 있다.
 이렇게 되면 2번에서 전송한 notes.id가 name에 저장되는 것으로 값을 전달해 줄 수 있다.
 
 그외에도 match를 사용하여 전달받은 parameter을 불러올 수 있다.
+
+<br/><br/>
 
 ## 2. Qurery문을 사용해 전달하기
 
