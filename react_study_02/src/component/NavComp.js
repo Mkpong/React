@@ -18,7 +18,8 @@ function NavComp(){
               navbarScroll
             >
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/board">Board</Nav.Link>
+              <Nav.Link href="/note">Note</Nav.Link>
+              <Nav.Link href="/note/write">write</Nav.Link>
 
               <NavDropdown title="Link" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
