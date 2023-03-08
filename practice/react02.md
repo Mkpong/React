@@ -1,10 +1,14 @@
 # URL로 페이지에 값 전달하기
 - URL에 값을 전달해 주어야 할때 parameter을 사용하는 방법과 쿼리문을 사용하는 방법이 있다.
 
+<br/>
+
 ## 1. Parameter을 사용해 전달하기
 
 우리가 평소에는 props를 이용하여 매개변수를 전달하지만, Route를 사용할때는 URL에 실어서 보내야 할 때도 있다.
 이때는 URL에 parameter을 실어서 컴포넌트를 열어줄 수 있다.
+
+<br/>
 
 ### 1. Route에서 전달받을 parameter명 설정
 
@@ -12,7 +16,7 @@
 
 `<Route exact path="/note/view/:id" element={<NoteView />}></Route>`
 
-<br/><br/>
+<br/>
 
 ### 2. Link등을 통해 url을 호출할때 ${}으로 매개변수를 전달해 준다.
 
@@ -24,7 +28,7 @@
 
 해당 문제 때문에 변수 인식이 안되어 계속 고민함 ㅠㅠ
 
-<br/><br/>
+<br/>
 
 ### 3. 전달한 Parameter을 Component에서 받아 사용
 
