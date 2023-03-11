@@ -26,7 +26,7 @@ function NoteView(){
     } ,[])
 
     return (
-        <div className={mx-2}> 
+        <div> 
             <Table striped="columns" style={{textAlign: 'center'}}>
                 <thead>
                 </thead>
