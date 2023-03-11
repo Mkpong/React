@@ -3,13 +3,18 @@ import {useState , useEffect} from 'react'
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
+import Table from 'react-bootstrap/Table';
 
 function Note(){
     
     
     const [note , setNote] = useState([]);
     const notelist = note.map((notes) => (
-            <li key={notes.id}><Link to={`/note/view/${notes.id}`}>{notes.id}</Link></li>
+            <tr key={notes.id}>
+              <td>{notes.id}</td>
+              <td><Link to={`/note/view/${notes.id}`}>{notes.title}</Link></td>
+              <td>2023-03-09</td>
+            </tr>
     ))
 
     useEffect(() => {
@@ -20,11 +25,21 @@ function Note(){
         .catch((error)=>console.log(error))
     }, [])
 
-    return(
-        <div>
+    return (
+        <Table striped="columns">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
             {notelist}
-        </div>
-    ) 
+          </tbody>
+        </Table>
+      );
+
 }
 
 export default Note;

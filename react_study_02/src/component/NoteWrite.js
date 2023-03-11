@@ -2,6 +2,8 @@ import React from 'react'
 import {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 function NoteWrite(){
 
@@ -20,7 +22,7 @@ function NoteWrite(){
         })
         .catch((error) => console.log(error))
 
-        // return navigate("/Note");
+        return navigate("/Note");
     }
 
     const onChange = (e) => {
@@ -34,18 +36,20 @@ function NoteWrite(){
 
     return(
         <div>
-            <h1>NoteWrite</h1>
-            <div>
-                <label>title</label>
-                <input type="text" id="title" onChange={onChange} />
-            </div>
-            <div>
-                <label>content</label>
-                <textarea type="text" id="content" onChange={onChange} />
-            </div>
-            <button onClick={function(){
+            <h1 style={{textAlign: 'center'}}>NoteWrite</h1>
+            <Form>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                    <Form.Label>Title</Form.Label>
+                    <Form.Control type="text" placeholder="title" onChange={onChange} id="title"/>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                    <Form.Label>TextArea</Form.Label>
+                    <Form.Control as="textarea" type="text" onChange={onChange} rows={3} id="content" />
+                </Form.Group>
+            </Form>
+            <Button variant="outline-primary" onClick={() => {
                 write();
-            }}>작성</button>
+            }}>Write</Button>{' '}
         </div>
     )
 }
