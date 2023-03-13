@@ -9,3 +9,6 @@
 2. Register 페이지 구현 -mdb사용
 3. User list 페이지 구현
 4. Team list 페이지 구현
+
+내가 겪었던 문제
+1. useeffect 무한 루프
