@@ -14,7 +14,7 @@ function Teamlist() {
         <tr key={team.id}>
             <td>{team.id}</td>
             <td><Link to={`/team/view/${team.id}`}>{team.name}</Link></td>
-            <td>0</td>
+            <td>{team.size}</td>
             <td>
                 <Button variant="primary" onClick={() => {
                     registerteam(team.id)
