@@ -22,7 +22,7 @@ React 개발의 준비는 끝이난다.
 - code를 종료하기 위해 터미널에서 사용하는 단축키
 > ctrl+c -> y 혹은 ctrl+c
 
-
+asdasdasd
 #React_Study
 ## 1. react_study_01
 **구현내용**
